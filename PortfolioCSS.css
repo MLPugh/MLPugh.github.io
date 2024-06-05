@@ -23,8 +23,14 @@ header{
     background-color: var(--primary);
     color: var(--secondary);
     padding: 2vh 1vw;
+    max-height: 100px;
 }
 
+#header-logo{
+    height: 80px;
+    width: 115px;
+    padding: 2px 25px 2px 15px;
+}
 nav{
     display: flex;
     float: right;
