@@ -13,18 +13,19 @@ h1{
     float:  left;
 }
 
-header{
+header{                                                 /*New change here*/
+    position: sticky;
+    top: 0;                                             
     width: 100%;
-    top: 0;
-    position: fixed;
     background-color: var(--primary);
     color: var(--secondary);
-    padding: 2vh 1vw;
+    padding: 1vh 1vw;
     max-height: 100px;
     display: flex;
     z-index: 1;
-}
-
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}         
+/*New change ends*/
 #header-logo{
     height: 80px;
     width: 115px;
@@ -47,6 +48,8 @@ header{
 
 a{
     margin: 2vw;
+    font-size: 18px;                                              /*New change here*/
+    font-weight: 450;  
 }
 
 a:last-of-type{
