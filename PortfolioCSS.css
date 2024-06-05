@@ -15,15 +15,14 @@ h1{
 
 header{
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     top: 0;
     position: fixed;
     background-color: var(--primary);
     color: var(--secondary);
     padding: 2vh 1vw;
     max-height: 100px;
+    display: flex;
+    z-index: 1;
 }
 
 #header-logo{
@@ -31,14 +30,27 @@ header{
     width: 115px;
     padding: 2px 25px 2px 15px;
 }
-nav{
+
+.box{
+    height: 100%;
+    width: 100%;
     display: flex;
-    float: right;
-    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    align-self: center;
+}
+
+.push{
+    margin-left: auto;
+    align-items: center;
 }
 
 a{
-    margin: 1vw;
+    margin: 2vw;
+}
+
+a:last-of-type{
+    margin: 1vw 4vw 1vw 2vw;
 }
 
 body{
@@ -72,15 +84,16 @@ img{
 
 .text-block{
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: hsl(0, 5%, 98%);
-    color: black;
-    z-index: 5;
-    border-radius: 25px;
-    padding: 10px 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background-color: hsl(0, 5%, 98%);
+  color: black;
+  z-index: 5;
+  border-radius: 25px;
+  padding: 10px 20px;
 }
 
 h2{
