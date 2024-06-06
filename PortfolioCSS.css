@@ -58,7 +58,6 @@ a:last-of-type{
 
 body{
     background-color: var(--secondary);
-    margin-top: 8.7vh;
     overflow: hidden;
 }
 
